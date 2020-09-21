@@ -10,7 +10,6 @@ body{
     margin: auto;
 }
 
-
 .grid{
     margin: auto;
     display: grid;
@@ -33,7 +32,6 @@ body{
         align-items: center;
        }
 
-       
        .mid{
            grid-area: mid; 
            height: 60px;
@@ -76,9 +74,6 @@ letter-spacing: -0.02em;
     }
 
     
-
-    
-
     .home{
         border: none;
         outline: none;
@@ -158,8 +153,6 @@ line-height: 100%;
     font-weight: 900;
     font-size: 45px;
     line-height: 100%;
-    
-    /* or 45px */
     letter-spacing: -0.02em;
     
     color: #FFFFFF;
@@ -177,14 +170,12 @@ line-height: 100%;
         font-family: 'Fira Sans', sans-serif;
     }
     
-    /* Add styles to 'label' selector */
     label {
         font-size: 0.85em;
         margin-left: 12px;
         color: white;
     }
     
-    /* Add styles to 'input' and 'textarea' selectors */
     input[type=text],input[type=email], textarea {
         width: 100%;
         padding: 12px;
@@ -197,12 +188,10 @@ line-height: 100%;
         
     }
     
-    /* Add styles to show 'focus' of selector */
     input[type=text]:focus,input[type=email]:focus, textarea:focus {
         border: 1px solid green;
     }
     
-    /* Add styles to the submit button */
     input[type=submit] {
         background: white;
         margin: 0 auto;
@@ -217,18 +206,15 @@ line-height: 100%;
         text-align: center;
     }
     
-    /* Add styles for 'focus' property */
     input[type=submit]:focus {
         background: white;
         color: whitesmoke;
     }
     
-    /* Style 'hover' property */
     input[type=submit]:hover {
         background: white;
     }
     
-    /* Align items to center of the 'div' with the class 'center' */
     .center {
         text-align: center;
         align-self: flex-end;
