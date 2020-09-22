@@ -1,269 +1,155 @@
-body{
-    background-color: #e5e5e5;
-}
-
-.pageWrap{
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .page {
+    margin: auto;
+    max-width: 1000px;
+    background-color: #ebebeb;
+  }
+  
+  .center {
+    flex: 1;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.grid{
-    margin: auto;
-    display: grid;
-    grid-auto-columns: 1000px;
-    gap: 0px;
-    grid-template-areas:
-        "top"
-        "mid"
-        "bot"
-        "end";
-       }
-
-     
-       .top{
-        grid-area: top;
-        background: #C7DDEA;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-       }
-
-       .mid{
-           grid-area: mid; 
-           height: 60px;
-           display: flex;
-           justify-content: space-evenly;
-           align-items: center;
-           background-color: white;
-       }
-       
-       .bot{
-           
-           grid-area: bot;
-           display: flex;
-           background-color: #A9A19E;
-           height: 500px;
-           flex-direction: row;
-           justify-content: space-evenly;
-           
-       }
-        
-       .end{
-        background: red;
-        grid-area: end;
-    }
-
-    .hello{
-        margin-left:260px ;
-        font-family: Frank Ruhl Libre;
-font-size: 45px;
-font-style: normal;
-font-weight: 900;
-line-height: 45px;
-letter-spacing: -0.02em;
-
-
-    }
-
-    .guy{
-        margin-left: 100px;
-    }
-
-    
-    .home{
-        border: none;
-        outline: none;
-        background-color: transparent;
-        text-decoration: none;
-        font-family: Fira Sans;
-        opacity: 0.4;
-        
-color: #000000;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 100%;
-
-    }
-
-    .ourOffer{
-        border: none;
-        outline: none;
-        background-color: transparent;
-        text-decoration: none;
-        opacity: 0.4;
-        
-color: #000000;
-font-family: Fira Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 100%;
-
-}
-
-    .whyUs{
-        border: none;
-        outline: none;
-        background-color: transparent;
-        text-decoration: none;
-        font-family: Fira Sans;
-        opacity: 0.4;
-        
-color: #000000;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 100%;
-    
-
-    }
-
-    .contact{
-        border: none;
-        outline: none;
-        background-color: transparent;
-        text-decoration: none;
-        font-family: Fira Sans;
-        
-        
-color: #000000;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 100%;
-    
-
-    }
-
-    .whatsOnyourmind{
+    align-items: center;
+  }
+  .flex-end {
+    align-items: flex-end;
+  }
+  
+  .image {
+    height: 400px;
+    width: 200px;
+    object-fit: contain;
+    object-position: center bottom;
+  }
+  
+  .title {
     font-family: Frank Ruhl Libre;
-    margin-top: 69px;
-    width: 314px;
-    height: 140px;
-    left: 297px;
-    top: 514px;
-    
-    font-family: Frank Ruhl Libre;
+    font-size: 48px;
     font-style: normal;
     font-weight: 900;
-    font-size: 45px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-    
-    color: #FFFFFF;
-
-
+    margin-top: 72px;
+  
+  }
+  
+  .nav p,
+  .nav a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #a9a19e;
+    font-size: 14px;
+    padding: 16px 0px;
+  }
+  
+  .nav .active {
+    color: black;
+  }
+  
+  .whatson {
+    font-family: Frank Ruhl Libre;
+    color: white;
+    font-size: 56px;
+    margin: 0px 64px;
+  }
+  
+  label {
+    color: white;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    resize: none;
+  }
+  
+  input[type="submit"] {
+    background: white;
+    outline: 0;
+    color: black;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 1000px;
+    font-weight: bold;
+  }
+  
+  .header {
+    background-color: #c7ddea;
+  }
+  
+  .flex-start {
+    align-items: flex-start;
+  }
+  
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .map {
+    background-image: url("./img/Rectangle\ 6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+  }
+  
+  .pin {
+    height: 50px;
+    width: 40px;
+  }
+  
+  .adress {
+    background-color: orange;
+    padding: 0px 32px;
+    color: white;
+  }
+  
+  .adress-container {
+    height: 80%;
+  }
+  
+  .mid-section {
+    background-color: #a9a19e;
+    padding: 64px 0px;
+  }
+  
+  .footer {
+    height: 250px;
+    background-color: grey;
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-column {
+      flex-direction: column;
     }
-
-
-    .container {
-        padding: 12px 24px 24px 24px;
-        margin: 48px 12px;
-        border-radius: 4px;
-        width: 334px;
-        
-        font-family: 'Fira Sans', sans-serif;
+  
+    .pin {
+      display: none;
     }
-    
-    label {
-        font-size: 0.85em;
-        margin-left: 12px;
-        color: white;
+  
+    .map {
+      margin-top: 20px;
     }
-    
-    input[type=text],input[type=email], textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-        
+  
+    .whatson {
+      text-align: center;
+      margin-bottom: 16px;
     }
-    
-    input[type=text]:focus,input[type=email]:focus, textarea:focus {
-        border: 1px solid green;
+  
+    .mid-section {
+      align-items: center;
     }
-    
-    input[type=submit] {
-        background: white;
-        margin: 0 auto;
-        outline: 0;
-        color: black;
-        border: 0;
-        padding: 12px 24px;
-        border-radius: 18px;
-        transition: all ease-in-out 0.1s;
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    
-    input[type=submit]:focus {
-        background: white;
-        color: whitesmoke;
-    }
-    
-    input[type=submit]:hover {
-        background: white;
-    }
-    
-    .center {
-        text-align: center;
-        align-self: flex-end;
-        margin-left: 200px;
-        margin-top: 20px;
-    }
-
-    .karta{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(8, 50px);
-    }
-
-    .box-orange{
-        grid-row: 2 / span 4;
-        grid-column: 2 / span 4;
-        z-index: 2;
-    }
-    
-    .map{
-        
-        display: block;
-        grid-column: 1 / 12;
-        grid-row: 1 / 9;
-    }
-    
-    .box-orange{
-        background: #FAB131;
-        padding: 30px;
-      }
-      
-    
-
-    .box-orange h1{
-
-        color: white;
-        font-size: 45px;
-        margin: 0;
-    }
-
-    .box-orange p{
-
-        font-family: 'fira sans';
-        font-weight: bold;
-        color: white;
-    }
-
-    .grey{
-
-        background: #777474;
-        height: 350px;
-    }
+  }
+  
